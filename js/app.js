@@ -1,7 +1,7 @@
 /* ---------- بيانات تجريبية (dummy) ---------- */
 const DB = {
   departments: [
-    { id: 'anesthesia', name: 'التخدير', about: 'قسم متخصص بالعناية والتخدير.', stages: ['Stage 1','Stage 2'], teachers: ['د. علي','د. سارة'] },
+    { id: 'anesthesia', name: 'التخدير', about: 'قسم متخصص بالعناية والتخدير.', stages: ['Stage 2','Stage 3'], teachers: ['د. ليث','د.عادل'] },
     { id: 'laboratory', name: 'المختبر', about: 'التحاليل والفحوص المخبرية.', stages: ['Stage 1'], teachers: ['د. مريم','د. حسن'] },
     { id: 'radiology', name: 'الأشعة', about: 'التصوير الطبي وقراءته.', stages: ['Stage 2','Stage 3'], teachers: ['د. فهد'] },
     { id: 'dentistry', name: 'طب الأسنان', about: 'العناية وعمليات الأسنان.', stages: ['Stage 1','Stage 2'], teachers: ['د. ليلى'] },
