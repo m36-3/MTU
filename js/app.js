@@ -44,7 +44,7 @@ const DB = {
     desc: "كورس شرح مادة الاجهزة النظري للمرحلة الثالثة",
     subject: "أجهزة",
     stage: "Stage 3",
-    dept: "anesthesia",
+    dept:'anesthesia',
     thumb: "a.png",
     lessons: [
       { id:'c103l1', title: "مقدمة", yt:"1w7OgIMMRc4" },
@@ -530,3 +530,4 @@ closeCultureModal.addEventListener("click", () => {
 cultureModalOverlay.addEventListener("click", () => {
   cultureModal.classList.remove("show");
 });
+
