@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الأقسام — بوابة كلية التقنيات الصحيةوالطبية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="departments">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><img src="logo.png" alt="logo"><span>بوابة كلية الطب</span></a>
+      <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="departments.html" class="active">الأقسام</a>
+        <a href="courses.html">الدورات</a>
+        <a href="notes.html">الملازم</a>
+        <a href="exams-calendar.html">تقويم الامتحانات</a>
+        <a href="medical-culture.html">الثقافة الطبية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h1>الأقسام الطبية</h1>
+      </div>
+      <div id="deptList" class="grid grid-3"></div>
+    </section>
+
+    <section id="deptDetails" class="section" hidden>
+      <div class="section-head">
+        <h2 id="deptTitle">اسم القسم</h2>
+        <button class="btn ghost" id="backToDepts">الرجوع للأقسام</button>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="content">
+            <h3>المراحل</h3>
+            <div id="deptStages" class="chips"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="content">
+            <h3>المدرّسين</h3>
+            <div id="deptTeachers" class="chips"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-sub">
+        <h3>المحتوى حسب المرحلة</h3>
+        <div id="stageContent"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> بوابة كلية التقنيات الصحية والطبية — جميع الحقوق محفوظة</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

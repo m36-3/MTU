@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>بوابة كلية التقنيات الصحيةوالطبية — الرئيسية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <img src="logo.png" alt="logo">
+        <span>بوابة كلية التقنيات الصحيةسوالطبية</span>
+      </a>
+      <nav>
+        <a href="index.html" class="active">الرئيسية</a>
+        <a href="departments.html">الأقسام</a>
+        <a href="courses.html">الدورات</a>
+        <a href="notes.html">الملازم</a>
+        <a href="exams-calendar.html">تقويم الامتحانات</a>
+        <a href="medical-culture.html">الثقافة الطبية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>مرحبًا بك في <span class="grad">بوابة  كلية تقنيات صحية وطبية</span></h1>
+        <p class="muted">موقع تفاعلي وحديث لعرض الدورات، الملازم، مواعيد الامتحانات ومقالات الثقافة الطبية.</p>
+        <form id="homeSearchForm" class="searchbar">
+          <input id="homeSearch" type="search" placeholder="ابحث عن دورة، مذكرة أو موضوع ثقافي..." />
+          <button class="btn">بحث</button>
+        </form>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card card">
+          <h3>ابحث مسبقًا</h3>
+          <p class="muted">جرّب: \"تشريح\" أو اختر قسمًا من الأقسام.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>دورات مميزة</h2>
+        <a class="link" href="courses.html">عرض الكل →</a>
+      </div>
+      <div id="homeCourses" class="grid grid-3"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>ملازم حديثة</h2>
+        <a class="link" href="notes.html">عرض الكل →</a>
+      </div>
+      <div id="homeNotes" class="grid grid-3"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>مقالات الثقافة الطبية</h2>
+        <a class="link" href="medical-culture.html">عرض الكل →</a>
+      </div>
+      <div id="homeCulture" class="grid grid-3"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> بوابة كلية التقنيات الصحية والطبية — جميع الحقوق محفوظة</div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

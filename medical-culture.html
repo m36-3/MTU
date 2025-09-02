@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الثقافة الطبية — بوابة كلية التقنيات الصحية و الطبية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="culture">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><img src="logo.png" alt="logo"><span>بوابة كلية الطب</span></a>
+      <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="departments.html">الأقسام</a>
+        <a href="courses.html">الدورات</a>
+        <a href="notes.html">الملازم</a>
+        <a href="exams-calendar.html">تقويم الامتحانات</a>
+        <a href="medical-culture.html" class="active">الثقافة الطبية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h1>الثقافة الطبية</h1>
+        <div class="filters">
+          <input id="cultureSearch" type="search" placeholder="بحث بعنوان المقال..." />
+          <select id="cultureFilter"><option value="">الكل</option><option value="topic">موضوع</option><option value="term">مصطلح</option></select>
+        </div>
+      </div>
+
+      <div id="cultureGrid" class="grid grid-3"></div>
+    </section>
+
+    <!-- modal لعرض المحتوى الكامل --> 
+    <div id="cultureModal" class="modal" hidden>
+      <div class="modal-card card">
+        <button class="modal-close" id="closeCultureModal"></button>
+        <img id="cultureImage" src="" alt="" style="max-height:220px; width:100%; object-fit:cover;">
+        <div class="content">
+          <h3 id="cultureModalTitle"></h3>
+          <p id="cultureModalBody"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> بوابة كلية الطب</div>
+  </footer>
+<!-- modal لعرض المحتوى الكامل --> 
+<div id="cultureModal" class="modal" hidden>
+  <div class="modal-overlay" id="cultureModalOverlay"></div>
+  <div class="modal-card card">
+    <button class="modal-close" id="closeCultureModal">&times;</button>
+    <img id="cultureImage" src="" alt="" style="max-height:220px; width:100%; object-fit:cover;">
+    <div class="content">
+      <h3 id="cultureModalTitle"></h3>
+      <p id="cultureModalBody"></p>
+    </div>
+  </div>
+</div>
+ <footer class="site-footer">
+    <div class="container">© <span id="year"></span> بوابة كلية التقنيات الصحية والطبية — جميع الحقوق محفوظة</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

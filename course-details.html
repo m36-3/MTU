@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>تفاصيل الدورة — بوابة كلية التقنيات الصحية والطبية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="course-details">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><img src="logo.png" alt="logo"><span>بوابة كلية الطب</span></a>
+      <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="departments.html">الأقسام</a>
+        <a href="courses.html" class="active">الدورات</a>
+        <a href="notes.html">الملازم</a>
+        <a href="exams-calendar.html">تقويم الامتحانات</a>
+        <a href="medical-culture.html">الثقافة الطبية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h1 id="courseTitle">عنوان الدورة</h1>
+        <a class="btn ghost" href="courses.html">← العودة للدورات</a>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card" style="grid-column: span 2;">
+          <div class="content">
+            <h3>قائمة الدروس</h3>
+            <ol id="lessonList" class="lesson-list"></ol>
+          </div>
+        </div>
+
+        <div class="card">
+          <img id="courseThumb" class="thumb" src="images/course.jpg" alt="thumb">
+          <div class="content">
+            <div id="courseMeta" class="chips"></div>
+            <div class="progress-wrap" title="تقدمك">
+              <div id="courseProgress" class="progress-bar" style="width:0%"></div>
+            </div>
+            <small class="muted">يُحفَظ التقدم محليًا</small>
+          </div>
+        </div>
+      </div>
+
+      <div id="playerCard" class="card" style="margin-top:16px;">
+        <div class="content">
+          <div class="player-aspect">
+            <iframe id="ytPlayer" src="" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="player-controls">
+            <button id="prevLesson" class="btn">سابق</button>
+            <div id="nowPlaying" class="muted">لم يتم اختيار درس</div>
+            <button id="nextLesson" class="btn">التالي</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> بوابة كلية التقنيات الصحية والطبية — جميع الحقوق محفوظة</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
