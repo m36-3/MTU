@@ -12,14 +12,14 @@ const DB = {
     },
     {
       id: "laboratory",
-      name: "المختبر",
+      name: "تقنيات المختبرات الطبية",
       about: "التحاليل والفحوص المخبرية.",
       stages: ["Stage 1"],
       teachers: ["د. مريم", "د. حسن"]
     },
     {
       id: "radiology",
-      name: "الأشعة",
+      name: "تقنيات الاشعة",
       about: "التصوير الطبي وقراءته.",
       stages: ["Stage 2", "Stage 3"],
       teachers: ["د. فهد"]
@@ -28,14 +28,14 @@ const DB = {
       id: "dentistry",
       name: "تقنيات صناعة الأسنان",
       about: "العناية وعمليات الأسنان.",
-      stages: ["Stage 1", "Stage 2"],
+      stages: ["Stage 2", "Stage 3"],
       teachers: ["د. ليلى"]
     },
     {
       id: "optics",
       name: "البصريات",
       about: "عيون وبصريات طبية.",
-      stages: ["Stage 1"],
+      stages: ["Stage 3"],
       teachers: ["د. كريم"]
     },
     {
@@ -51,7 +51,7 @@ const DB = {
   courses: [
     // === الدورات الأصلية ===
     {
-      id: "c201",
+      id: "an1",
       title: "التخدير الوزاري",
       desc: "دورة أونلاين لشرح مادة التخدير الوزارية",
       subject: "تخدير",
@@ -60,133 +60,22 @@ const DB = {
       thumb: "an.png",
       lessons: [
         {
-          id: "c201l1",
+          id: "an1L1",
           title: "محاضرة Regional Anesthesia :: الجزء الأول",
           yt: "OaQCo5059pk"
         },
         {
-          id: "c201l2",
+          id: "an1L2",
           title: "محاضرة Regional anesthesia :: الجزء الثاني",
           yt: "4g08dChJboA"
         }
       ]
     },
-    {
-      id: "c102",
-      title: "التخدير النظري",
-      desc: "كورس شرح مادة التخدير النظري للمرحلة الثالثة",
-      subject: "تخدير",
-      stage: "Stage 3",
-      dept: "anesthesia",
-      thumb: "an.png",
-      lessons: [
-        { id: "c102l1", title: "التخدير الموضعي", yt: "dQw4w9WgXcQ" },
-        { id: "c102l2", title: "امراض الكلى والتخدير", yt: "kJQP7kiw5Fk" },
-        { id: "c102l3", title: "امراض الكبد والتخدير", yt: "kJQP7kiw5Fk" }
-      ]
-    },
-    {
-      id: "c103",
-      title: "الأجهزة نظري",
-      desc: "كورس شرح مادة الاجهزة النظري للمرحلة الثالثة",
-      subject: "أجهزة",
-      stage: "Stage 3",
-      dept: "anesthesia",
-      thumb: "a.png",
-      lessons: [
-        { id: "c103l1", title: "مقدمة", yt: "1w7OgIMMRc4" },
-        { id: "c103l2", title: "التفاعلات", yt: "9bZkp7q19f0" }
-      ]
-    },
-    {
-      id: "c1",
-      title: "تشريح الإنسان",
-      desc: "مبادئ التشريح.",
-      subject: "تشريح",
-      stage: "Stage 1",
-      dept: "anesthesia",
-      thumb: "images/anatomy.jpg",
-      lessons: [
-        { id: "c1l1", title: "مقدمة للتشريح", yt: "dQw4w9WgXcQ" },
-        { id: "c1l2", title: "الهيكل العظمي", yt: "kXYiU_JCYtU" }
-      ]
-    },
-    {
-      id: "c2",
-      title: "أساسيات المختبر",
-      desc: "طرق التحليل المخبري.",
-      subject: "مختبر",
-      stage: "Stage 1",
-      dept: "laboratory",
-      thumb: "images/lab.jpg",
-      lessons: [
-        { id: "c2l1", title: "أدوات المختبر", yt: "3JZ_D3ELwOQ" }
-      ]
-    },
-    {
-      id: "c3",
-      title: "تصوير شعاعي",
-      desc: "مبادئ الأشعة.",
-      subject: "أشعة",
-      stage: "Stage 2",
-      dept: "radiology",
-      thumb: "images/radiology.jpg",
-      lessons: [
-        { id: "c3l1", title: "مفاهيم أساسية", yt: "V-_O7nl0Ii0" }
-      ]
-    },
 
-    // === دورات وهمية إضافية ===
-    {
-      id: "c4",
-      title: "مقدمة في تقنيات صناعة الأسنان",
-      desc: "أساسيات طب الأسنان.",
-      subject: "تقنيات صناعة الاسنان",
-      stage: "Stage 1",
-      dept: "dentistry",
-      thumb: "images/dentistry.jpg",
-      lessons: [
-        { id: "c4l1", title: "الأدوات السنية", yt: "abc123xyz" }
-      ]
-    },
-    {
-      id: "c5",
-      title: "البصريات السريرية",
-      desc: "تشخيص العيون.",
-      subject: "بصريات",
-      stage: "Stage 1",
-      dept: "optics",
-      thumb: "images/optics.jpg",
-      lessons: [
-        { id: "c5l1", title: "مقدمة في البصريات", yt: "def456uvw" }
-      ]
-    },
-    {
-      id: "c6",
-      title: "الصحة العامة المتقدمة",
-      desc: "برامج الوقاية.",
-      subject: "صحة المجتمع",
-      stage: "Stage 3",
-      dept: "public_health",
-      thumb: "images/public_health.jpg",
-      lessons: [
-        { id: "c6l1", title: "السياسات الصحية", yt: "ghi789rst" }
-      ]
-    }
   ],
 
   // 🚩 الملازم (notes)
   notes: [
-    {
-      id: "n201",
-      title: "الاجهزة نظري",
-      teacher: "دكتور ميثم",
-      stage: "المرحلة الثالثة",
-      number: "1",
-      dept: "anesthesia",
-      subject: "اجهزة",
-      file: "files/a1.pdf"
-    },
     {
       id: "n101",
       subject: "أجهزة",
@@ -194,7 +83,7 @@ const DB = {
       title: "الأجهزة نظري 1",
       teacher: "د. ميثم",
       dept: "anesthesia",
-      stage: "Stage 3",
+      stage: "Stage 3.1",
       file: "files/a1.pdf"
     },
     {
@@ -204,7 +93,7 @@ const DB = {
       title: "الأجهزة نظري 2",
       teacher: "د. ميثم",
       dept: "anesthesia",
-      stage: "Stage 3",
+      stage: "Stage 3.1",
       file: "files/a2.pdf"
     },
     {
@@ -215,7 +104,7 @@ const DB = {
       title: "الأجهزة نظري 3",
       teacher: "د. ميثم",
       dept: "anesthesia",
-      stage: "Stage 3",
+      stage: "Stage 3.1",
       file: "files/a3.pdf"
     },
     {
@@ -225,71 +114,91 @@ const DB = {
       title: "عناية عملي",
       teacher: "د. عادل",
       dept: "anesthesia",
-      stage: "Stage 3",
+      stage: "Stage 3.1",
       file: "files/m123.pdf"
     },
-    {
-      id: "n1",
-      subject: "تشريح",
-      number: 1,
-      title: "ملاحظات تشريح 101",
-      teacher: "د. علي",
-      dept: "anesthesia",
-      stage: "Stage 1",
-      file: "files/anatomy101.pdf"
-    },
-    {
-      id: "n2",
-      subject: "مختبر",
-      number: 1,
-      title: "دروس مختبر 1",
-      teacher: "د. مريم",
-      dept: "laboratory",
-      stage: "Stage 1",
-      file: "files/lab1.pdf"
-    },
+  
+   {
+  id: "n101",
+  subject: "تخدير",
+  number: 1,
+  title: "Introduction to Anesthesiology",
+  teacher: "Dr. Waad A. Hayder ",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/AN.K1.L1.PDF"
+},
+{
+  id: "n102",
+  subject: "تخدير",
+  number: 2,
+  title: "Drugs used in premedication ",
+  teacher: "Dr. Waad A. Hayder ",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/AN.K1.L2.PDF"
+},
+{
+  id: "n103",
+  subject: "تخدير",
+  number: 3,
+  title: "Inhalational anesthetic agents",
+  teacher: "Dr. Waad A. Hayder ",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/AN.K1.L3.PDF"
+},
+{
+  id: "n104",
+  subject: "تخدير",
+  number: 4,
+  title: "Intravenous anesthetic agents ",
+  teacher: "Dr. Waad A. Hayder ",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/AN.K1.L4.PDF"
+},
+{
+  id: "n105",
+  subject: "تخدير",
+  number: 5,
+  title: " NEUROMUSCULAR BLOCKADE",
+  teacher: "Dr. Waad A. Hayder ",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/AN.K1.L5.PDF"
+},
+{
+  id: "n106",
+  subject: "تخدير",
+  number: 6,
+  title: "General Principles of Pharmacology",
+  teacher: "Dr. Waad A. Hayder ",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/AN.K1.L6.PDF"
+},
+{
+  id: "n107",
+  subject: "تخدير",
+  number: 7,
+  title: "Choice of anesthetic method and anesthetic agents",
+  teacher: "Dr. Waad A. Hayder ",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/AN.K1.L7.PDF"
+},
+{
+  id: "n108",
+  subject: "تخدير",
+  number: 8,
+  title: "Preanaesthetic visit and assessment ",
+  teacher: "Dr. Waad A. Hayder ",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/AN.K1.L8.PDF"
+}
 
-    // === ملازم وهمية إضافية ===
-    {
-      id: "n3",
-      subject: "أشعة",
-      number: 1,
-      title: "مقدمة في الأشعة",
-      teacher: "د. فهد",
-      dept: "radiology",
-      stage: "Stage 2",
-      file: "files/radiology1.pdf"
-    },
-    {
-      id: "n4",
-      subject: "أسنان",
-      number: 1,
-      title: "ملخص طب الأسنان",
-      teacher: "د. ليلى",
-      dept: "dentistry",
-      stage: "Stage 1",
-      file: "files/dentistry1.pdf"
-    },
-    {
-      id: "n5",
-      subject: "بصريات",
-      number: 1,
-      title: "ملاحظات البصريات",
-      teacher: "د. كريم",
-      dept: "optics",
-      stage: "Stage 1",
-      file: "files/optics1.pdf"
-    },
-    {
-      id: "n6",
-      subject: "صحة عامة",
-      number: 1,
-      title: "ملخص الصحة العامة",
-      teacher: "د. هند",
-      dept: "public_health",
-      stage: "Stage 3",
-      file: "files/public_health1.pdf"
-    }
   ],
 
   // 🚩 منشورات ثقافية (culture)
@@ -637,11 +546,12 @@ function initAutocomplete(inputEl, onSelect){
         meta: `${c.subject} - ${c.stage}` // ✅ إضافة المرحلة هنا
     })),
     ...DB.notes.map(n => ({
-        type: 'note',
-        id: n.id,
-        title: n.title,
-        meta: `${n.subject} - ${n.stage}` // ✅ إضافة المرحلة هنا
-    })),
+    type: 'note',
+    id: n.id,
+    title: `مذكرة ${n.number}: ${n.title}:الكورس ${n.course}`, // ✅ ترقيم المذكرة بالـ number
+    meta: `${n.subject} - ${n.stage} - الكورس ${n.course}` // ✅ إضافة الكورس هنا
+})),
+
     ...DB.culture.map(p => ({
         type: 'post',
         id: p.id,
