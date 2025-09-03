@@ -1299,13 +1299,13 @@ function renderExams(){
       const coursesLinks = e.courses.map(id=>{ const c=DB.courses.find(x=>x.id===id); return c? `<a href="course-details.html?courseId=${c.id}">${escapeHtml(c.title)}</a>` : '' }).join(', ');
       return `<tr>
         <td>${escapeHtml(e.date)}</td>
-        <td>${escapeHtml(e.time)}</td>
-        <td>${escapeHtml(e.day)}</td>
-        <td>${escapeHtml(e.examType || '')}</td> <!-- نوع الامتحان -->
+        
+        
+        
         <td>${escapeHtml(e.name)}</td>
         <td>${escapeHtml(e.dept)}</td>
         <td>${notesLinks} ${coursesLinks}</td>
-        <td>${escapeHtml(e.remarks)}</td>
+        
       </tr>`;
     }).join('') || '<tr><td colspan="6">لا توجد مواعيد</td></tr>';
   }
@@ -1433,3 +1433,4 @@ document.querySelectorAll('.modal-close').forEach(btn => {
     modal.classList.remove('show');
   });
 });
+
