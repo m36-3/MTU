@@ -2,6 +2,7 @@
   --bg:#07142a; --bg-2:#0b233f; --card:#0f2646; --muted:#93a8c6; --text:#eaf3ff;
   --accent:#5cc8ff; --accent-2:#7a8cff; --curve:14px; --shadow:0 12px 30px rgba(2,8,23,.6);
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 body{font-family:Inter,system-ui,Segoe UI,Roboto; background:linear-gradient(180deg,var(--bg),var(--bg-2)); color:var(--text); -webkit-font-smoothing:antialiased}
@@ -31,8 +32,6 @@ nav a:hover, nav a.active{color:var(--text);background:linear-gradient(90deg, rg
 .grid{display:grid;gap:18px}
 .grid-3{grid-template-columns:repeat(3,1fr)}
 .grid-2{grid-template-columns:repeat(2,1fr)}
-@media(max-width:1024px){.grid-3{grid-template-columns:repeat(2,1fr)}} 
-@media(max-width:720px){.grid-3,.grid-2{grid-template-columns:1fr}; .nav{flex-direction:column;align-items:flex-start}}
 .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.03);padding:12px;border-radius:var(--curve);box-shadow:var(--shadow);transition:transform .22s,box-shadow .22s}
 .card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(2,8,23,.7)}
 .thumb{width:100%;height:160px;object-fit:cover;border-radius:10px;background:linear-gradient(90deg,var(--bg-2),var(--card))}
@@ -40,7 +39,7 @@ nav a:hover, nav a.active{color:var(--text);background:linear-gradient(90deg, rg
 
 /* chips */
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{background:rgba(255,255,255,.02);padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.03);font-weight:600;color:var(--muted);font-size:13px}
+.chip{background:rgba(255,255,255,.02);padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.03);font-weight:600;color:var(--muted);font-size:13px;cursor:default}
 
 /* lesson list, player */
 .lesson-list{list-style:none;padding-left:12px}
@@ -62,60 +61,179 @@ nav a:hover, nav a.active{color:var(--text);background:linear-gradient(90deg, rg
 .modal-card{max-width:900px;width:100%;position:relative}
 .modal-close{position:absolute;left:12px;top:12px;background:transparent;border:none;color:var(--text);font-size:22px}
 
-
-
 /* small niceties */
 .section{margin-top:22px}
 .section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
 .section-sub{margin-top:14px}
 .link{color:var(--accent);text-decoration:none;font-weight:600}
-.chips .chip{cursor:default}
 
 /* subtle animations */
 .fade-in{animation:fadeIn .55s ease both}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
+/* responsive adjustments */
+@media(max-width:1024px){.grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){
+  .grid-3,.grid-2{grid-template-columns:1fr}
+  .nav{flex-direction:column;align-items:flex-start;gap:8px}
+  nav a{padding:8px 12px;width:100%}
+  .card,.lesson-list li,.player-aspect{width:100%;margin-bottom:12px}
+  body,input,button{font-size:14px}
+  .btn{width:100%;text-align:center}
+}
+
+/* responsive tables for mobile */
+@media (max-width:720px) {
+  .table, .table thead, .table tbody, .table th, .table td, .table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .table thead tr {
+    display: none;
+  }
+
+  .table tr {
+    margin-bottom: 15px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    text-align: right;
+    font-size: 14px;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    text-align: left;
+    flex: 1;
+  }
+
+  .table td span {
+    flex: 2;
+    text-align: right;
+  }
+}
+/* Responsive Tables Wrapper */
+.table-wrapper {
   width: 100%;
-  height: 100%;
+  overflow-x: auto; /* تمكين التمرير الأفقي */
+  -webkit-overflow-scrolling: touch; /* تمرير سلس على الأجهزة اللمسية */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text);
+  min-width: 600px; /* يضمن ألا يكون الجدول مضغوط جدًا على الهواتف */
+}
+
+.table th, .table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.03);
+  text-align: right;
+  white-space: nowrap; /* منع التفاف النص */
+}
+
+/* Small devices adjustments */
+@media (max-width:720px) {
+  .table th, .table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* تحسين البطاقات والقوائم */
+.card, .lesson-list li, .player-aspect {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* الحاوية الرئيسية تبقى مرنة */
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+/* التمرير الأفقي للجدول */
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(92,200,255,.5);
+  border-radius: 4px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.05);
+}
+/* Responsive Tables Wrapper */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* تمكين التمرير الأفقي */
+  -webkit-overflow-scrolling: touch; /* تمرير سلس على الأجهزة اللمسية */
+}
+
+/* الجدول */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text);
+  min-width: 600px; /* عرض أدنى للجدول */
+  table-layout: fixed; /* توزيع الأعمدة بالتساوي */
+}
+
+/* الأعمدة */
+.table th, .table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.03);
+  text-align: right;
+  white-space: nowrap; /* منع التفاف النص التلقائي */
+  overflow: hidden;
+  text-overflow: ellipsis; /* اختصار النص الطويل بثلاث نقاط */
+}
+
+/* تحديد عرض أقصى لبعض الأعمدة */
+.table th:nth-child(6), .table td:nth-child(6) { 
+  max-width: 220px; /* عمود المراجع */
+  white-space: normal; /* يسمح بالالتفاف داخل الحد */
+}
+
+.table th:nth-child(7), .table td:nth-child(7) { 
+  max-width: 120px; /* عمود رقم القاعة */
+}
+
+/* تحسين العرض على شاشات صغيرة */
+@media (max-width:720px) {
+  .table th, .table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+.modal,
+.modal.show {
+  pointer-events: none; /* منع أي تفاعل افتراضي */
+}
+
+.modal.show {
+  pointer-events: auto; /* السماح بالتفاعل فقط عند العرض */
+}
+.modal {
   display: none; /* مخفي افتراضيًا */
+  position: fixed;
+  inset: 0;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  background: rgba(0,0,0,0.5);
 }
 
 .modal.show {
   display: flex;
-}
-
-.modal-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.modal-card {
-  position: relative;
-  background-color: #fff;
-  border-radius: 8px;
-  max-width: 600px;
-  width: 90%;
-  z-index: 1010;
-  padding: 1rem;
-}
-
-.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
 }
