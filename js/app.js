@@ -734,7 +734,7 @@ exams: [
     day: "الإثنين",
     name: "امتحان اجهزة",
     dept: "anesthesia",
-    notes: ["n104","n105"],
+    notes: ["n104","n105","n106","n107","n108"],
     courses: ["الكورس الأول"],
     remarks: "قاعة 6",
     examType: "مد ثاني"
@@ -782,7 +782,7 @@ exams: [
     day: "الأربعاء",
     name: "امتحان باطني",
     dept: "anesthesia",
-    notes: ["m104","m105"],
+    notes: ["m104","m105","m106","m107"],
     courses: ["الكورس الأول"],
     remarks: "قاعة 6",
     examType: "مد ثاني"
@@ -822,7 +822,7 @@ exams: [
     day: "الإثنين",
     name: "امتحان جراحة مراجعة",
     dept: "anesthesia",
-    notes: ["g101","g102"],
+    notes: ["g101","g102","g103","g104"],
     courses: ["الكورس الأول"],
     remarks: "قاعة 3",
     examType: "مد أول"
@@ -846,7 +846,7 @@ exams: [
     day: "الثلاثاء",
     name: "امتحان باطني مراجعة",
     dept: "anesthesia",
-    notes: ["m101","m102"],
+    notes: ["m101","m102","m103","m104"],
     courses: ["الكورس الأول"],
     remarks: "قاعة 12",
     examType: "مد أول"
@@ -872,7 +872,7 @@ exams: [
     day: "الإثنين",
     name: "امتحان شامل تخدير",
     dept: "anesthesia",
-    notes: ["n101","n102"],
+    notes: ["n101","n102","n103","n104","g101","g102","m101","m102"],
     courses: ["الكورس الأول"],
     remarks: "قاعة 3",
     examType: "فاينل نظري"
@@ -884,7 +884,7 @@ exams: [
     day: "الإثنين",
     name: "امتحان شامل تخدير",
     dept: "anesthesia",
-    notes: ["n105","n106"],
+    notes: ["n105","n106","n107","n108","g103","g104","g105","g106","m103","m104","m105","m106"],
     courses: ["الكورس الأول"],
     remarks: "قاعة القدس",
     examType: "فاينل نظري"
@@ -898,7 +898,7 @@ exams: [
     day: "الثلاثاء",
     name: "امتحان تخدير نظري",
     dept: "anesthesia",
-    notes: ["n101","n102"],
+    notes: ["n101","n102","n103","n104","n105","n106","n107","n108"],
     courses: ["الكورس الأول"],
     remarks: "قاعة 12",
     examType: "مد أول"
@@ -910,7 +910,7 @@ exams: [
     day: "الثلاثاء",
     name: "امتحان تخدير نظري",
     dept: "anesthesia",
-    notes: ["n101","n102"],
+    notes: ["n101","n102","n103","n104","n105","n106","n107","n108"],
     courses: ["الكورس الأول"],
     remarks: "قاعة 6",
     examType: "مد ثاني"
@@ -1421,4 +1421,15 @@ function showPost(postId) {
     ${renderBody(post.body)}
   `;
 }
+const modal = document.querySelector('.modal');
+const closeBtn = document.querySelector('.modal-close');
 
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('show'); // إخفاء المودال
+});
+document.querySelectorAll('.modal-close').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('.modal');
+    modal.classList.remove('show');
+  });
+});
