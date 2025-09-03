@@ -237,3 +237,188 @@ nav a:hover, nav a.active{color:var(--text);background:linear-gradient(90deg, rg
 .modal.show {
   display: flex;
 }
+/* حاوية قائمة المراجع */
+#exam-notes {
+  display: block;          
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* حاوية قائمة المراجع */
+#exam-notes {
+  display: block;          
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* عناصر القائمة */
+#exam-notes li {
+  margin-bottom: 8px;
+}
+
+/* روابط المراجع */
+#exam-notes li a {
+  display: block;             
+  width: 100%;                
+  max-width: 100%;
+  white-space: normal !important; 
+  word-break: break-word;     
+  overflow-wrap: break-word;  
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background 0.3s;
+}
+
+/* تأثير عند المرور بالفأرة */
+#exam-notes li a:hover {
+  background-color: #e0f0ff;
+}
+
+/* تحسين العرض على الشاشات الصغيرة */
+@media (max-width:720px) {
+  #exam-notes li a {
+    font-size: 14px;
+    padding: 6px 8px;
+    white-space: nowrap;       /* منع الالتفاف التلقائي */
+    overflow-x: auto;          /* تمكين التمرير الأفقي */
+    display: inline-block;     /* لجعل التمرير ممكن */
+  }
+
+  /* إخفاء شريط التمرير لكن السماح بالتمرير باللمس */
+  #exam-notes li a::-webkit-scrollbar {
+    height: 6px;
+  }
+  #exam-notes li a::-webkit-scrollbar-thumb {
+    background: rgba(92,200,255,.5);
+    border-radius: 3px;
+  }
+  #exam-notes li a::-webkit-scrollbar-track {
+    background: rgba(255,255,255,.05);
+  }
+}
+
+/* عناصر القائمة */
+#exam-notes li {
+  margin-bottom: 8px;
+}
+
+/* روابط المراجع */
+#exam-notes li a {
+  display: block;             
+  width: 100%;                
+  max-width: 100%;
+  white-space: normal !important; 
+  word-break: break-word;     
+  overflow-wrap: break-word;  
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background 0.3s;
+}
+
+/* تأثير عند المرور بالفأرة */
+#exam-notes li a:hover {
+  background-color: #e0f0ff;
+}
+
+/* تحسين العرض على الشاشات الصغيرة */
+@media (max-width:720px) {
+  #exam-notes li a {
+    font-size: 14px;
+    padding: 6px 8px;
+    white-space: nowrap;       /* منع الالتفاف التلقائي */
+    overflow-x: auto;          /* تمكين التمرير الأفقي */
+    display: inline-block;     /* لجعل التمرير ممكن */
+  }
+
+  /* إخفاء شريط التمرير لكن السماح بالتمرير باللمس */
+  #exam-notes li a::-webkit-scrollbar {
+    height: 6px;
+  }
+  #exam-notes li a::-webkit-scrollbar-thumb {
+    background: rgba(92,200,255,.5);
+    border-radius: 3px;
+  }
+  #exam-notes li a::-webkit-scrollbar-track {
+    background: rgba(255,255,255,.05);
+  }
+}
+
+.site-footer {
+  padding: 30px 18px;
+  background: var(--bg-2);
+  color: var(--muted);
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,.05);
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: var(--text);
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .3s;
+}
+
+.social-links a img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  filter: invert(60%) sepia(90%) saturate(400%) hue-rotate(320deg); /* يعطي لون مناسب */
+}
+
+.social-links a:hover {
+  color: var(--accent-2);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+
+/* موبايل */
+@media (max-width: 720px) {
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
