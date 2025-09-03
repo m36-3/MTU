@@ -1304,7 +1304,7 @@ function renderExams(){
         
         <td>${escapeHtml(e.name)}</td>
         <td>${escapeHtml(e.dept)}</td>
-        <td>${notesLinks} ${coursesLinks}</td>
+       
         
       </tr>`;
     }).join('') || '<tr><td colspan="6">لا توجد مواعيد</td></tr>';
@@ -1433,4 +1433,5 @@ document.querySelectorAll('.modal-close').forEach(btn => {
     modal.classList.remove('show');
   });
 });
+
 
