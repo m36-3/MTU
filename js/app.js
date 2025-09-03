@@ -722,7 +722,10 @@ exams: [
     day: "الإثنين",
     name: "امتحان اجهزة",
     dept: "anesthesia",
-    
+    notes: ["n101","n102","n103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 12",
+    examType: "مد أول"
   },
   {
     id: "e2",
@@ -731,8 +734,10 @@ exams: [
     day: "الإثنين",
     name: "امتحان اجهزة",
     dept: "anesthesia",
-    
-    
+    notes: ["n104","n105","n106","n107","n108"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 6",
+    examType: "مد ثاني"
   },
   {
     id: "e3",
@@ -741,7 +746,10 @@ exams: [
     day: "الثلاثاء",
     name: "امتحان جراحة",
     dept: "anesthesia",
- 
+    notes: ["g101","g102","g103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "مد أول"
   },
   {
     id: "e4",
@@ -750,7 +758,10 @@ exams: [
     day: "الثلاثاء",
     name: "امتحان جراحة",
     dept: "anesthesia",
-   
+    notes: ["g104","g105","g106"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "مد ثاني"
   },
   {
     id: "e5",
@@ -759,8 +770,11 @@ exams: [
     day: "الأربعاء",
     name: "امتحان باطني",
     dept: "anesthesia",
+    notes: ["m101","m102","m103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 12",
+    examType: "مد أول"
   },
- 
   {
     id: "e6",
     date: "2025-11-05",
@@ -768,7 +782,10 @@ exams: [
     day: "الأربعاء",
     name: "امتحان باطني",
     dept: "anesthesia",
-
+    notes: ["m104","m105","m106","m107"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 6",
+    examType: "مد ثاني"
   },
 
   // === أسبوع 2 ===
@@ -779,8 +796,11 @@ exams: [
     day: "الإثنين",
     name: "امتحان عناية",
     dept: "anesthesia",
+    notes: ["n201","n202","n203"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "مد أول"
   },
-
   {
     id: "e8",
     date: "2025-11-10",
@@ -788,7 +808,10 @@ exams: [
     day: "الإثنين",
     name: "امتحان عناية",
     dept: "anesthesia",
-   
+    notes: ["n204","n205","n206"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "مد ثاني"
   },
 
   // === أسبوع 3 ===
@@ -799,7 +822,10 @@ exams: [
     day: "الإثنين",
     name: "امتحان جراحة مراجعة",
     dept: "anesthesia",
-    
+    notes: ["g101","g102","g103","g104"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "مد أول"
   },
   {
     id: "e10",
@@ -808,8 +834,11 @@ exams: [
     day: "الإثنين",
     name: "امتحان جراحة مراجعة",
     dept: "anesthesia",
+    notes: ["g105","g106"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "مد ثاني"
   },
-   
   {
     id: "e11",
     date: "2025-11-18",
@@ -817,8 +846,11 @@ exams: [
     day: "الثلاثاء",
     name: "امتحان باطني مراجعة",
     dept: "anesthesia",
+    notes: ["m101","m102","m103","m104"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 12",
+    examType: "مد أول"
   },
-   
   {
     id: "e12",
     date: "2025-11-18",
@@ -826,7 +858,10 @@ exams: [
     day: "الثلاثاء",
     name: "امتحان باطني مراجعة",
     dept: "anesthesia",
- 
+    notes: ["m105","m106","m107"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 6",
+    examType: "مد ثاني"
   },
 
   // === أسبوع 4 ===
@@ -837,7 +872,10 @@ exams: [
     day: "الإثنين",
     name: "امتحان شامل تخدير",
     dept: "anesthesia",
-  
+    notes: ["n101","n102","n103","n104","g101","g102","m101","m102"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "فاينل نظري"
   },
   {
     id: "e14",
@@ -846,8 +884,12 @@ exams: [
     day: "الإثنين",
     name: "امتحان شامل تخدير",
     dept: "anesthesia",
-    
+    notes: ["n105","n106","n107","n108","g103","g104","g105","g106","m103","m104","m105","m106"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "فاينل نظري"
   },
+
   // === امتحانات إضافية ===
   {
     id: "e15",
@@ -856,7 +898,10 @@ exams: [
     day: "الثلاثاء",
     name: "امتحان تخدير نظري",
     dept: "anesthesia",
-
+    notes: ["n101","n102","n103","n104","n105","n106","n107","n108"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 12",
+    examType: "مد أول"
   },
   {
     id: "e16",
@@ -865,7 +910,10 @@ exams: [
     day: "الثلاثاء",
     name: "امتحان تخدير نظري",
     dept: "anesthesia",
-   
+    notes: ["n101","n102","n103","n104","n105","n106","n107","n108"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 6",
+    examType: "مد ثاني"
   },
   {
     id: "e17",
@@ -874,7 +922,10 @@ exams: [
     day: "الأربعاء",
     name: "امتحان حاسوب",
     dept: "computer_science",
-  
+    notes: ["cs101","cs102","cs103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "مد أول"
   },
   {
     id: "e18",
@@ -883,7 +934,10 @@ exams: [
     day: "الأربعاء",
     name: "امتحان حاسوب",
     dept: "computer_science",
-
+    notes: ["cs101","cs102","cs103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "مد ثاني"
   }
 ]
 
@@ -1244,10 +1298,16 @@ function renderExams(){
       const notesLinks = e.notes.map(id=>{ const n=DB.notes.find(x=>x.id===id); return n? `<a href="${n.file}" download>${escapeHtml(n.title)}</a>` : '' }).join(', ');
       const coursesLinks = e.courses.map(id=>{ const c=DB.courses.find(x=>x.id===id); return c? `<a href="course-details.html?courseId=${c.id}">${escapeHtml(c.title)}</a>` : '' }).join(', ');
       return `<tr>
-        <td>${escapeHtml(e.date)}</td>
-        <td>${escapeHtml(e.name)}</td>
-        <td>${escapeHtml(e.dept)}</td>
-      </tr>`;
+  <td data-label="التاريخ">${escapeHtml(e.date)}</td>
+  <td data-label="الوقت">${escapeHtml(e.time)}</td>
+  <td data-label="اليوم">${escapeHtml(e.day)}</td>
+  <td data-label="نوع الامتحان">${escapeHtml(e.session)}</td>
+  <td data-label="اسم الامتحان">${escapeHtml(e.name)}</td>
+  <td data-label="القسم">${escapeHtml(e.dept)}</td>
+  <td data-label="الملاحظات / الدورات">${notesLinks} ${coursesLinks}</td>
+  <td data-label="رقم القاعة">${escapeHtml(e.remarks)}</td>
+</tr>`;
+
     }).join('') || '<tr><td colspan="6">لا توجد مواعيد</td></tr>';
   }
   deptSel.addEventListener('change',apply); apply();
@@ -1374,7 +1434,3 @@ document.querySelectorAll('.modal-close').forEach(btn => {
     modal.classList.remove('show');
   });
 });
-
-
-
-
