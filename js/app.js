@@ -7,7 +7,7 @@ const DB = {
       id: "anesthesia",
       name: "التخدير",
       about: "قسم متخصص بالعناية والتخدير.",
-      stages: ["Stage 2", "Stage 3"],
+      stages: ["Stage 2", "Stage 3.1"],
       teachers: ["د. ليث", "د.عادل"]
     },
     {
@@ -76,21 +76,163 @@ const DB = {
 
   // 🚩 الملازم (notes)
   notes: [
+    // 🔹 مادة اجهزة نظري - مرحلة ثالثة تخدير
+{
+  id: "e101",
+  subject: "اجهزة نظري",
+  number: 1,
+  title: "Tracheal Tube",
+  teacher: "د. عادل",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ah3k1l1.pdf"
+},
+{
+  id: "e102",
+  subject: "اجهزة نظري",
+  number: 2,
+  title: "Oropharyngeal Airways",
+  teacher: "د. عادل",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ah3k1l2.pdf"
+},
+{
+  id: "e103",
+  subject: "اجهزة نظري",
+  number: 3,
+  title: "Laryngeal Mask",
+  teacher: "د. عادل",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ah3k1l3.pdf"
+},
+{
+  id: "e104",
+  subject: "اجهزة نظري",
+  number: 4,
+  title: "Laryngoscope",
+  teacher: "د. عادل",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ah3k1l4.pdf"
+},
+{
+  id: "e105",
+  subject: "اجهزة نظري",
+  number: 5,
+  title: "Humidifiers",
+  teacher: "د. عادل",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ah3k1l5.pdf"
+},
+{
+  id: "e106",
+  subject: "اجهزة نظري",
+  number: 6,
+  title: "Nebulizers",
+  teacher: "د. عادل",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ah3k1l6.pdf"
+},
+{
+  id: "e107",
+  subject: "اجهزة نظري",
+  number: 7,
+  title: "Medical Suction Apparatus",
+  teacher: "د. عادل",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ah3k1l7.pdf"
+},
     {
       id: "n101",
-      subject: "أجهزة",
+      subject: "اجهزة مرتب",
       number: 1,
-      title: "الأجهزة نظري 1",
+      title: "اجهزة نظري 1",
       teacher: "د. ميثم",
       dept: "anesthesia",
       stage: "Stage 3.1",
       file: "files/a1.pdf"
     },
+    // 🔹 مادة باطني نظري - مرحلة ثالثة تخدير
+{
+  id: "m101",
+  subject: "باطني نظري",
+  number: 1,
+  title: "Jaundice",
+  teacher: "د. احمد حسن راضي",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ba3k1l1.pdf"
+},
+{
+  id: "m102",
+  subject: "باطني نظري",
+  number: 2,
+  title: "Peptic Ulcer",
+  teacher: "د. احمد حسن راضي",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ba3k1l2.pdf"
+},
+{
+  id: "m103",
+  subject: "باطني نظري",
+  number: 3,
+  title: "Cerebrovascular Accident",
+  teacher: "د. احمد حسن راضي",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ba3k1l3.pdf"
+},
+{
+  id: "m104",
+  subject: "باطني نظري",
+  number: 4,
+  title: "Renal Failure",
+  teacher: "د. احمد حسن راضي",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ba3k1l4.pdf"
+},
+{
+  id: "m105",
+  subject: "باطني نظري",
+  number: 5,
+  title: "Coronary Artery Diseases",
+  teacher: "د. احمد حسن راضي",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ba3k1l5.pdf"
+},
+{
+  id: "m106",
+  subject: "باطني نظري",
+  number: 6,
+  title: "Arrhythmia",
+  teacher: "د. احمد حسن راضي",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ba3k1l6.pdf"
+},
+{
+  id: "m107",
+  subject: "باطني نظري",
+  number: 7,
+  title: "Hypertension",
+  teacher: "د. احمد حسن راضي",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/ba3k1l7.pdf"
+},
     {
       id: "n102",
-      subject: "أجهزة",
+      subject: "اجهزة نظري",
       number: 2,
-      title: "الأجهزة نظري 2",
+      title:"اجهزة مرتب",
       teacher: "د. ميثم",
       dept: "anesthesia",
       stage: "Stage 3.1",
@@ -98,8 +240,8 @@ const DB = {
     },
     {
       id: "n103",
-      subject: "أجهزة",
-      subject: "stage3",
+      subject: "اجهزة نظري",
+      subject: " اجهزة مرتب",
       number: 3,
       title: "الأجهزة نظري 3",
       teacher: "د. ميثم",
@@ -120,7 +262,7 @@ const DB = {
   
    {
   id: "n101",
-  subject: "تخدير",
+  subject: "تخدير نظري",
   number: 1,
   title: "Introduction to Anesthesiology",
   teacher: "Dr. Waad A. Hayder ",
@@ -130,7 +272,7 @@ const DB = {
 },
 {
   id: "n102",
-  subject: "تخدير",
+  subject: "تخدير نظري",
   number: 2,
   title: "Drugs used in premedication ",
   teacher: "Dr. Waad A. Hayder ",
@@ -140,7 +282,7 @@ const DB = {
 },
 {
   id: "n103",
-  subject: "تخدير",
+  subject: "تخدير نظري",
   number: 3,
   title: "Inhalational anesthetic agents",
   teacher: "Dr. Waad A. Hayder ",
@@ -150,7 +292,7 @@ const DB = {
 },
 {
   id: "n104",
-  subject: "تخدير",
+  subject: "تخدير نظري",
   number: 4,
   title: "Intravenous anesthetic agents ",
   teacher: "Dr. Waad A. Hayder ",
@@ -160,7 +302,7 @@ const DB = {
 },
 {
   id: "n105",
-  subject: "تخدير",
+  subject: "تخدير نظري",
   number: 5,
   title: " NEUROMUSCULAR BLOCKADE",
   teacher: "Dr. Waad A. Hayder ",
@@ -170,7 +312,7 @@ const DB = {
 },
 {
   id: "n106",
-  subject: "تخدير",
+  subject: "تخدير نظري",
   number: 6,
   title: "General Principles of Pharmacology",
   teacher: "Dr. Waad A. Hayder ",
@@ -180,7 +322,7 @@ const DB = {
 },
 {
   id: "n107",
-  subject: "تخدير",
+  subject: "تخدير نظري",
   number: 7,
   title: "Choice of anesthetic method and anesthetic agents",
   teacher: "Dr. Waad A. Hayder ",
@@ -190,14 +332,136 @@ const DB = {
 },
 {
   id: "n108",
-  subject: "تخدير",
+  subject: "تخدير نظري",
   number: 8,
   title: "Preanaesthetic visit and assessment ",
   teacher: "Dr. Waad A. Hayder ",
   dept: "anesthesia",
   stage: "Stage 3.1",
   file: "files/AN.K1.L8.PDF"
-}
+},
+// 🔹 مادة الجراحة النظري - مرحلة ثالثة تخدير
+{
+  id: "s101",
+  subject: "جراحة نظري",
+  number: 1,
+  title: "Git (Upper and Lower)",
+  teacher: "د. إسراء + د. ريم",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/SU3K1L1.pdf"
+},
+{
+  id: "s102",
+  subject: "جراحة نظري",
+  number: 2,
+  title: "Git (General Review and Surgical Approaches)",
+  teacher: "د. إسراء + د. ريم",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/SU3K1L2.pdf"
+},
+{
+  id: "s103",
+  subject: "جراحة نظري",
+  number: 3,
+  title: "Liver",
+  teacher: "د. إسراء + د. ريم",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/SU3K1L3.pdf"
+},
+{
+  id: "s104",
+  subject: "جراحة نظري",
+  number: 4,
+  title: "Spleen",
+  teacher: "د. إسراء + د. ريم",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/SU3K1L4.pdf"
+},
+{
+  id: "s105",
+  subject: "جراحة نظري",
+  number: 5,
+  title: "Esophageal Diseases & Surgery",
+  teacher: "د. إسراء + د. ريم",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/SU3K1L5.pdf"
+},
+{
+  id: "s106",
+  subject: "جراحة نظري",
+  number: 6,
+  title: "Pancreas",
+  teacher: "د. إسراء + د. ريم",
+  dept: "anesthesia",
+  stage: "Stage 3.1",
+  file: "files/SU3.K1.L6"
+},
+{
+    id: "n201",
+    subject: "عناية نظري",
+    number: 1,
+    title: "Intensive care unit (ICU)",
+    teacher: "د. محمد",
+    dept: "anesthesia",
+    stage: "Stage 3.1",
+    file: "files/ic3k1l1.pdf"
+  },
+  {
+    id: "n202",
+    subject: "عناية نظري",
+    number: 2,
+    title: "POST ANESTHESIA CARE UNIT (PACU)",
+    teacher: "د. محمد",
+    dept: "anesthesia",
+    stage: "Stage 3.1",
+    file: "files/ic3k1l4.pdf"
+  },
+  {
+    id: "n203",
+    subject: "عناية نظري",
+    number: 3,
+    title: "Standard in PACU",
+    teacher: "د. محمد",
+    dept: "anesthesia",
+    stage: "Stage 3.1",
+    file: "files/ic3k1l3.pdf"
+  },
+  {
+    id: "n204",
+    subject: "عناية نظري",
+    number: 4,
+    title: "ROUTINE OBSERVATION In the PACU",
+    teacher: "د. محمد",
+    dept: "anesthesia",
+    stage: "Stage 3.1",
+    file: "files/ic3k1l4.pdf"
+  },
+  {
+    id: "n205",
+    subject: "عناية نظري",
+    number: 5,
+    title: "Cardiovascular assessment",
+    teacher: "د. محمد",
+    dept: "anesthesia",
+    stage: "Stage 3.1",
+    file: "files/ic3k1l5.pdf"
+  },
+  {
+    id: "n206",
+    subject: "عناية نظري",
+    number: 6,
+    title: "Direct arterial blood pressure",
+    teacher: "د. محمد",
+    dept: "anesthesia",
+    stage: "Stage 3.1",
+    file: "files/ic3k1l6.pdf"
+  }
+
 
   ],
 
@@ -449,70 +713,234 @@ const DB = {
 
 
   // 🚩 الامتحانات (exams)
-  exams: [
-    {
-      id: "e1",
-      date: "2025-09-05",
-      day: "الجمعة",
-      name: "امتحان تشريح",
-      dept: "anesthesia",
-      notes: ["n1"],
-      courses: ["c1"],
-      remarks: "قاعة 12"
-    },
-    {
-      id: "e2",
-      date: "2025-09-07",
-      day: "الأحد",
-      name: "امتحان مختبر",
-      dept: "laboratory",
-      notes: ["n2"],
-      courses: ["c2"],
-      remarks: "مخابر 3"
-    },
+exams: [
+  // === أسبوع 1 ===
+  {
+    id: "e1",
+    date: "11-03",
+    time: "09:00",
+    day: "الإثنين",
+    name: "امتحان اجهزة",
+    dept: "anesthesia",
+    notes: ["n101","n102","n103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 12",
+    examType: "مد أول"
+  },
+  {
+    id: "e2",
+    date: "2025-11-03",
+    time: "13:00",
+    day: "الإثنين",
+    name: "امتحان اجهزة",
+    dept: "anesthesia",
+    notes: ["n104","n105","n106","n107","n108"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 6",
+    examType: "مد ثاني"
+  },
+  {
+    id: "e3",
+    date: "2025-11-04",
+    time: "09:00",
+    day: "الثلاثاء",
+    name: "امتحان جراحة",
+    dept: "anesthesia",
+    notes: ["g101","g102","g103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "مد أول"
+  },
+  {
+    id: "e4",
+    date: "2025-11-04",
+    time: "13:00",
+    day: "الثلاثاء",
+    name: "امتحان جراحة",
+    dept: "anesthesia",
+    notes: ["g104","g105","g106"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "مد ثاني"
+  },
+  {
+    id: "e5",
+    date: "2025-11-05",
+    time: "09:00",
+    day: "الأربعاء",
+    name: "امتحان باطني",
+    dept: "anesthesia",
+    notes: ["m101","m102","m103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 12",
+    examType: "مد أول"
+  },
+  {
+    id: "e6",
+    date: "2025-11-05",
+    time: "13:00",
+    day: "الأربعاء",
+    name: "امتحان باطني",
+    dept: "anesthesia",
+    notes: ["m104","m105","m106","m107"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 6",
+    examType: "مد ثاني"
+  },
 
-    // === امتحانات وهمية إضافية ===
-    {
-      id: "e3",
-      date: "2025-09-10",
-      day: "الأربعاء",
-      name: "امتحان أشعة",
-      dept: "radiology",
-      notes: ["n3"],
-      courses: ["c3"],
-      remarks: "قاعة 5"
-    },
-    {
-      id: "e4",
-      date: "2025-09-12",
-      day: "الجمعة",
-      name: "امتحان أسنان",
-      dept: "dentistry",
-      notes: ["n4"],
-      courses: ["c4"],
-      remarks: "قاعة 8"
-    },
-    {
-      id: "e5",
-      date: "2025-09-15",
-      day: "الاثنين",
-      name: "امتحان بصريات",
-      dept: "optics",
-      notes: ["n5"],
-      courses: ["c5"],
-      remarks: "قاعة 2"
-    },
-    {
-      id: "e6",
-      date: "2025-09-18",
-      day: "الخميس",
-      name: "امتحان صحة عامة",
-      dept: "public_health",
-      notes: ["n6"],
-      courses: ["c6"],
-      remarks: "قاعة 1"
-    }
-  ]
+  // === أسبوع 2 ===
+  {
+    id: "e7",
+    date: "2025-11-10",
+    time: "09:00",
+    day: "الإثنين",
+    name: "امتحان عناية",
+    dept: "anesthesia",
+    notes: ["n201","n202","n203"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "مد أول"
+  },
+  {
+    id: "e8",
+    date: "2025-11-10",
+    time: "13:00",
+    day: "الإثنين",
+    name: "امتحان عناية",
+    dept: "anesthesia",
+    notes: ["n204","n205","n206"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "مد ثاني"
+  },
+
+  // === أسبوع 3 ===
+  {
+    id: "e9",
+    date: "2025-11-17",
+    time: "09:00",
+    day: "الإثنين",
+    name: "امتحان جراحة مراجعة",
+    dept: "anesthesia",
+    notes: ["g101","g102","g103","g104"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "مد أول"
+  },
+  {
+    id: "e10",
+    date: "2025-11-17",
+    time: "13:00",
+    day: "الإثنين",
+    name: "امتحان جراحة مراجعة",
+    dept: "anesthesia",
+    notes: ["g105","g106"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "مد ثاني"
+  },
+  {
+    id: "e11",
+    date: "2025-11-18",
+    time: "09:00",
+    day: "الثلاثاء",
+    name: "امتحان باطني مراجعة",
+    dept: "anesthesia",
+    notes: ["m101","m102","m103","m104"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 12",
+    examType: "مد أول"
+  },
+  {
+    id: "e12",
+    date: "2025-11-18",
+    time: "13:00",
+    day: "الثلاثاء",
+    name: "امتحان باطني مراجعة",
+    dept: "anesthesia",
+    notes: ["m105","m106","m107"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 6",
+    examType: "مد ثاني"
+  },
+
+  // === أسبوع 4 ===
+  {
+    id: "e13",
+    date: "2025-11-24",
+    time: "09:00",
+    day: "الإثنين",
+    name: "امتحان شامل تخدير",
+    dept: "anesthesia",
+    notes: ["n101","n102","n103","n104","g101","g102","m101","m102"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "فاينل نظري"
+  },
+  {
+    id: "e14",
+    date: "2025-11-24",
+    time: "13:00",
+    day: "الإثنين",
+    name: "امتحان شامل تخدير",
+    dept: "anesthesia",
+    notes: ["n105","n106","n107","n108","g103","g104","g105","g106","m103","m104","m105","m106"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "فاينل نظري"
+  },
+
+  // === امتحانات إضافية ===
+  {
+    id: "e15",
+    date: "2025-11-25",
+    time: "09:00",
+    day: "الثلاثاء",
+    name: "امتحان تخدير نظري",
+    dept: "anesthesia",
+    notes: ["n101","n102","n103","n104","n105","n106","n107","n108"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 12",
+    examType: "مد أول"
+  },
+  {
+    id: "e16",
+    date: "2025-11-25",
+    time: "13:00",
+    day: "الثلاثاء",
+    name: "امتحان تخدير نظري",
+    dept: "anesthesia",
+    notes: ["n101","n102","n103","n104","n105","n106","n107","n108"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 6",
+    examType: "مد ثاني"
+  },
+  {
+    id: "e17",
+    date: "2025-11-26",
+    time: "09:00",
+    day: "الأربعاء",
+    name: "امتحان حاسوب",
+    dept: "computer_science",
+    notes: ["cs101","cs102","cs103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة 3",
+    examType: "مد أول"
+  },
+  {
+    id: "e18",
+    date: "2025-11-26",
+    time: "13:00",
+    day: "الأربعاء",
+    name: "امتحان حاسوب",
+    dept: "computer_science",
+    notes: ["cs101","cs102","cs103"],
+    courses: ["الكورس الأول"],
+    remarks: "قاعة القدس",
+    examType: "مد ثاني"
+  }
+]
+
 };
 
 /* ---------- مختصر DOM ---------- */
@@ -869,7 +1297,16 @@ function renderExams(){
     tbody.innerHTML = list.map(e=>{
       const notesLinks = e.notes.map(id=>{ const n=DB.notes.find(x=>x.id===id); return n? `<a href="${n.file}" download>${escapeHtml(n.title)}</a>` : '' }).join(', ');
       const coursesLinks = e.courses.map(id=>{ const c=DB.courses.find(x=>x.id===id); return c? `<a href="course-details.html?courseId=${c.id}">${escapeHtml(c.title)}</a>` : '' }).join(', ');
-      return `<tr><td>${escapeHtml(e.date)}</td><td>${escapeHtml(e.day)}</td><td>${escapeHtml(e.name)}</td><td>${escapeHtml(e.dept)}</td><td>${notesLinks} ${coursesLinks}</td><td>${escapeHtml(e.remarks)}</td></tr>`;
+      return `<tr>
+        <td>${escapeHtml(e.date)}</td>
+        <td>${escapeHtml(e.time)}</td>
+        <td>${escapeHtml(e.day)}</td>
+        <td>${escapeHtml(e.examType || '')}</td> <!-- نوع الامتحان -->
+        <td>${escapeHtml(e.name)}</td>
+        <td>${escapeHtml(e.dept)}</td>
+        <td>${notesLinks} ${coursesLinks}</td>
+        <td>${escapeHtml(e.remarks)}</td>
+      </tr>`;
     }).join('') || '<tr><td colspan="6">لا توجد مواعيد</td></tr>';
   }
   deptSel.addEventListener('change',apply); apply();
